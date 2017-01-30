@@ -1,0 +1,28 @@
+[{
+        "id": "1",
+        "name": "food"
+    }, {
+        "id": "2",
+        "name": "recreation"
+    }, {
+        "id": "3",
+        "name": "clothing"
+    }, {
+        "id": "4",
+        "name": "errand"
+    }, {
+        "id": "5",
+        "name": "utility"
+    }, {
+        "id": "6",
+        "name": "other"
+    }, {
+        "id": "7",
+        "name": "drink"
+    }, {
+        "id": "8",
+        "name": "black friday"
+    }, {
+        "id": "9",
+        "name": "commute"
+    }]
