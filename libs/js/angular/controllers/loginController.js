@@ -5,22 +5,32 @@
  */
 
 app.controller('loginController', function ($scope, $http, $location) {
-    remove_navbar();
-    $('#myModal').modal({
-        backdrop: 'static',
-        keyboard: false
+
+    $http.get("php_scripts/credentials/is_logged_in.php").success(function (data, status) {
+        if (status === 200) {
+            // alert(data);
+            if (data["status_code"] === 1) {
+                console.log(data["status_message"]+", redirecting to home");
+                console.log(data);
+                document.location = "home.php";
+                $location.path("home.php");
+
+            } else {
+                console.log(data["status_message"]);
+                $('#myModal').modal({
+                    backdrop: 'static',
+                    keyboard: false
+                });
+                $('#myModal').modal('show');
+                $scope.pwd = "";
+                $scope.uname = "";
+            }
+        }
     });
-    $('#myModal').modal('show');
-    $scope.pwd = "";
-    $scope.uname = "";
 
-    function remove_navbar() {
-        $("#navigation_bar").addClass("hide");
-    }
 
-    function show_navbar() {
-        $("#navigation_bar").removeClass("hide");
-    }
+
+
 
     $scope.login = function () {
         $http.post("php_scripts/credentials/login.php", {'user': $scope.uname, 'pass': $scope.pwd}).success(function (data, status) {
@@ -28,7 +38,7 @@ app.controller('loginController', function ($scope, $http, $location) {
                 if (data["status"] === 1) {
                     show_navbar();
                     $('#myModal').modal('hide');
-                    
+
                 } else {
                     alert(data["response_message"]);
                 }

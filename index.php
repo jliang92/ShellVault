@@ -5,8 +5,7 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <?php
-session_start();
-$_SESSION["is_auth"]=FALSE;
+
 ?>
 <html ng-app="shellVault"  >
     <head>
@@ -32,9 +31,7 @@ $_SESSION["is_auth"]=FALSE;
 
 
 
-        <!--Canvas import to use for generating graphs-->
-        <script src="libs/js/canvasJs/canvasjs.min.js"></script>
-
+      
         <!--BootStrap-->
         <script src="libs/css/bootstrap/js/bootstrap.js"></script>
         <script src="libs/css/bootstrap/docs-assets/js/holder.js"></script>

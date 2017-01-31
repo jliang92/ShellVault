@@ -38,9 +38,6 @@ and open the template in the editor.
 
 
 
-        <!--Canvas import to use for generating graphs-->
-        <script src="libs/js/canvasJs/canvasjs.min.js"></script>
-
         <!--BootStrap-->
         <script src="libs/css/bootstrap/js/bootstrap.js"></script>
         <script src="libs/css/bootstrap/docs-assets/js/holder.js"></script>

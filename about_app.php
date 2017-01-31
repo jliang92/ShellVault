@@ -33,9 +33,7 @@ and open the template in the editor.
         <!--Angular Controllers-->
         <script src="libs/js/angular/controllers/aboutappController.js"></script>
 
-        <!--Canvas import to use for generating graphs-->
-        <script src="libs/js/canvasJs/canvasjs.min.js"></script>
-
+     
         <!--BootStrap-->
         <script src="libs/css/bootstrap/js/bootstrap.js"></script>
         <script src="libs/css/bootstrap/docs-assets/js/holder.js"></script>
