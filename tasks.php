@@ -186,7 +186,7 @@ and open the template in the editor.
 
                                                 <td class="col-sm-4">
 
-                                                    <button class="btn btn-primary" ng-click="read_one(t.id)"><span class="glyphicon glyphicon-edit"></span>Edit </button>
+                                                    <button class="btn btn-primary" ng-click="read_one(t.id)"><span class="glyphicon glyphicon-edit"></span>Edit</button>
                                                     <button class="btn btn-default" ng-click="delete_task(t.id)"><span class="glyphicon glyphicon-remove"></span>Delete</button>
 
                                                 </td>

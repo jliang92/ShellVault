@@ -13,7 +13,9 @@ and open the template in the editor.
         <?php
         session_start();
         session_destroy();
-        header('Location: index.php');
         ?>
+    <script>
+      document.location = "index.php";
+    </script>
     </body>
 </html>

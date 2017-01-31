@@ -5,7 +5,6 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <?php
-
 ?>
 <html ng-app="shellVault"  >
     <head>
@@ -31,7 +30,7 @@ and open the template in the editor.
 
 
 
-      
+
         <!--BootStrap-->
         <script src="libs/css/bootstrap/js/bootstrap.js"></script>
         <script src="libs/css/bootstrap/docs-assets/js/holder.js"></script>
@@ -43,60 +42,48 @@ and open the template in the editor.
 
 
     </head>
-    <body class="">
-        <?php
-        //include 'html_components/navbar.html';
-        ?>
+    <body >
+       
 
         <div  class="container">
 
 
             <div  ng-controller="loginController">
                 <div>
-                    <div class="modal fade" id="myModal" role="dialog">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <!-- <button type="button" class="close" data-dismiss="modal">&times;</button>-->
-                                    <h4 id="modal_title" class="modal-title">Log In</h4>
+
+                    <form class="form-horizontal" id="credentials_form" action="home.php"  role="form">
+
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label class="control-label col-sm-4">Username:</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="uname" ng-model="uname" required/>
                                 </div>
-                                <form class="form-horizontal" id="credentials_form" action="home.php"  role="form">
-
-                                    <div class="modal-body">
-                                        <div class="form-group">
-                                            <label class="control-label col-md-4">Username:</label>
-                                            <div class="col-sm-6">
-                                                <input type="text" class="form-control" id="uname" ng-model="uname" required/>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="control-label col-md-4" for="pwd">Password:</label>
-                                            <div class="col-sm-6"> 
-                                                <input type="password" class="form-control" id="pwd" ng-model="pwd" required/>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button id="login_button" ng-click="login()"  class="btn btn-default">Log In</button>
-
-
-                                    </div>
-
-                                </form>
-
-
-
-
                             </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-4" for="pwd">Password:</label>
+                                <div class="col-sm-4"> 
+                                    <input type="password" class="form-control" id="pwd" ng-model="pwd" required/>
+                                </div>
+                            </div>
+
                         </div>
-                    </div><!--End of Modal-->
+                        <div class="modal-footer">
+                            <button id="login_button" ng-click="login()"  class="btn btn-default center-block center-text center">Log In</button>
+
+
+                        </div>
+
+                    </form>
+
 
 
 
                 </div>
             </div>
-        </div> 
+        </div><!--End of Modal-->
+
+
 
     </body>
 

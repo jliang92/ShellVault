@@ -13,7 +13,7 @@ app.controller('loginController', function ($scope, $http, $location) {
                 console.log(data["status_message"]+", redirecting to home");
                 console.log(data);
                 document.location = "home.php";
-                $location.path("home.php");
+                //$location.path("home.php");
 
             } else {
                 console.log(data["status_message"]);
