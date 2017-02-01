@@ -17,7 +17,7 @@ and open the template in the editor.
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>About This App</title>
+        <title>Home</title>
 
         <!--Jquery ui-->
         <script src="libs/js/jQuery/jquery-2.2.4.js"></script>

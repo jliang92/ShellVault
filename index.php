@@ -73,8 +73,11 @@ and open the template in the editor.
                                 </div>
 
                             </div>
-                            <div class="panel-footer">
-                                <button id="login_button" ng-click="login()"  class="btn btn-default center-block center-text center">Log In</button>
+                            <div class="panel-footer center-block center-text center">
+                                Demo Login Credentials<br>
+                                username: admin <br>
+                                password: master<br>
+                                <button id="login_button" ng-click="login()"  class="btn btn-default">Log In</button>
 
                             </div>
                         </div>
