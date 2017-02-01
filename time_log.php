@@ -145,7 +145,7 @@ and open the template in the editor.
 
                     </div>
 
-                    <div id="log_downloads" class="col-sm-4 panel panel-body panel-default">
+                    <div id="log_downloads" class=" hide col-sm-4 panel panel-body panel-default">
                         <h3>Select a format to download</h3>
                         <div id='download_csv' class=''>
                             <a class="button_link">
@@ -161,7 +161,7 @@ and open the template in the editor.
                             </a>
                         </div>
                     </div>     
-                    <div id="log_entry_operations" class="col-sm-4 panel panel-body panel-default">
+                    <div id="log_entry_operations" class="hide col-sm-4 panel panel-body panel-default">
                         <h3>Bulk actions:</h3>
                         <button class="btn btn-primary"  ng-click="time_log_archive()" disabled type="button" id="archive" >
                             <span class='glyphicon glyphicon-ok-circle'></span> Archive

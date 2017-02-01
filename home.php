@@ -62,13 +62,21 @@ and open the template in the editor.
                     <div class="panel-heading">Vault</div>
                     <div class="panel-body"><div class="row">
                             <div class="col-sm-6">
-                                <label>Purpose:</label> Just something small to for taking down credentials.Not intended for high risk info such as online banking credentials etc.
+                                <label>Current Features:</label>
+                                <ul>
+                                    <li>CRUD operations implemented</li>
+                                    <li>Clicking Id will redirect to the source website</li>
+                                    <li>Hover over row to enable editing, hover out to show original data.</li>
+                                    <li>Click Reset to change input form back to original values</li>
+                                    
+                                </ul>
                             </div>
 
                             <div class="col-sm-6">
                                 <label>Features Coming Soon:</label>
                                 <ul>
-                                    <li>Detect change and prompt the user before they leave page</li>
+                                    <li>Detect change</li> 
+                                    <li>if changed,prompt the user before they leave page</li>
                                     <li>Pagination</li>
                                 </ul>
                             </div>
@@ -81,10 +89,15 @@ and open the template in the editor.
                     <div class="panel-heading">Tasks</div>
                     <div class="panel-body"><div class="row">
                             <div class="col-sm-6">
-                                <label>Purpose:</label>
+                                <label>Current Features:</label>
 
-                                Create a task for those tedious errands. Deadlines are optional. 
-                                Its also good for logging activities/errand of the day so you can recall the date of the activity/errand.
+                                <ul>
+                                    <li>CRUD operations implemented</li>
+                                    <li>Uncompleted tasks with deadlines shown at top of the list</li>
+                                    <li>Search goes through data of the selected statuses: All, Incomplete,Completed</li>
+                                    <li>Quick Search is just like the search function mentioned above but isolated to filter 1 attribute at a time.</li>
+                                    
+                                </ul>
                             </div>
 
                             <div class="col-sm-6">
@@ -108,10 +121,13 @@ and open the template in the editor.
 
                         <div class="row">
                             <div class="col-sm-6">
-                                <label>Purpose:</label>
-                                Simply clock in and clock out to log a timeslot and fill out the notes section so you can record your activities( this whole app is basically to record and find things for different reasons). 
-                                The app will calculate the duration of the session. This can be used as a timesheet to log work hours however until archiving functions are available, it is strongly advised to mark the notes
-                                section so that you can tell which entries are for work and which are for other categories.  
+                                <label>Current Features:</label>
+                                <ul>
+                                    <li>CRUD operations</li>
+                                    <li>Clock In/Clock out</li>
+                                    <li>Edit Notes/Summary section of the entry to save any useful notes.</li>
+                                    
+                                </ul>
                             </div>
 
                             <div class="col-sm-6">
@@ -138,10 +154,11 @@ and open the template in the editor.
 
                         <div class="row">
                             <div class="col-sm-6">
-                                <label> Purpose:</label>
-                                Spending log is self explanatory. Record a transaction whenever you pay for anything. The calender is pre-set to the current day.
-                                Simply, select transaction type, provide the amount you paid and what it is you paid for.
-                                The app shows some stats such as total spent each day and each month. Click on the rows of the table to reveal more.
+                                <label>Current Features:</label>
+                                <ul>
+                                    <li>CRD operations implemented</li>
+                                    <li>Click table rows to show the details of the selected day.</li>
+                                </ul>
                             </div>
 
                             <div class="col-sm-6">
@@ -150,10 +167,11 @@ and open the template in the editor.
                                     <li>Edit the logs</li>
                                     <li>Delete logs by day instead of by entry.</li>
                                     <li>Delete logs by month</li>
+                                    <li>Search bar function</li>
                                     <li>Download logs by the month.</li>
                                     <li>Display data using a Graph</li>
                                     <li>Click header to sort the table results</li>
-
+                                    
                                 </ul>
                             </div>
                         </div>
