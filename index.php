@@ -43,38 +43,43 @@ and open the template in the editor.
 
     </head>
     <body >
-       
+
 
         <div  class="container">
 
 
             <div  ng-controller="loginController">
                 <div>
-
                     <form class="form-horizontal" id="credentials_form" action="home.php"  role="form">
 
-                        <div class="modal-body">
-                            <div class="form-group">
-                                <label class="control-label col-sm-4">Username:</label>
-                                <div class="col-sm-4">
-                                    <input type="text" class="form-control" id="uname" ng-model="uname" required/>
-                                </div>
+                        <div class=" panel panel-default">
+                            <div class="panel-heading center-block center-text center">
+                                <h3>Credentials</h3>
                             </div>
-                            <div class="form-group">
-                                <label class="control-label col-sm-4" for="pwd">Password:</label>
-                                <div class="col-sm-4"> 
-                                    <input type="password" class="form-control" id="pwd" ng-model="pwd" required/>
+                            <div class="panel-body">
+                                <div class="modal-body">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-4">Username:</label>
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control" id="uname" ng-model="uname" required/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-4" for="pwd">Password:</label>
+                                        <div class="col-sm-4"> 
+                                            <input type="password" class="form-control" id="pwd" ng-model="pwd" required/>
+                                        </div>
+                                    </div>
                                 </div>
+
                             </div>
+                            <div class="panel-footer">
+                                <button id="login_button" ng-click="login()"  class="btn btn-default center-block center-text center">Log In</button>
 
+                            </div>
                         </div>
-                        <div class="modal-footer">
-                            <button id="login_button" ng-click="login()"  class="btn btn-default center-block center-text center">Log In</button>
-
-
-                        </div>
-
                     </form>
+
 
 
 

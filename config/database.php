@@ -7,7 +7,6 @@
  */
 
 function connect_pg_heroku() {
-    $connection_string="";
    $db = pg_connect($connection_string);
     if (!$db) {
         echo "Database connection error.";
